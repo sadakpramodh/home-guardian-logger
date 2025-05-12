@@ -1,0 +1,476 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.mshomeguardian.logger"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+11-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:5:5-71
+11-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:5:22-68
+12    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+12-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:6:5-72
+12-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:6:22-69
+13    <uses-permission android:name="android.permission.READ_SMS" />
+13-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:7:5-67
+13-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:7:22-64
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:8:5-79
+14-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:8:22-76
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+15-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:9:5-77
+15-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:9:22-74
+16    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+16-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:10:5-81
+16-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:10:22-78
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:11:5-67
+17-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:11:22-64
+18    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+19    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->[com.google.firebase:firebase-firestore:24.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c506f92da6b2f73e5266845c125603\transformed\jetified-firebase-firestore-24.8.1\AndroidManifest.xml:10:5-79
+20-->[com.google.firebase:firebase-firestore:24.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c506f92da6b2f73e5266845c125603\transformed\jetified-firebase-firestore-24.8.1\AndroidManifest.xml:10:22-76
+21    <uses-permission android:name="android.permission.WAKE_LOCK" />
+21-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:23:5-68
+21-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:23:22-65
+22
+23    <permission
+23-->[androidx.core:core:1.10.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\99de76278b9bb9142f76ec3d92a6bdc1\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+24        android:name="com.mshomeguardian.logger.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+24-->[androidx.core:core:1.10.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\99de76278b9bb9142f76ec3d92a6bdc1\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+25        android:protectionLevel="signature" />
+25-->[androidx.core:core:1.10.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\99de76278b9bb9142f76ec3d92a6bdc1\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+26
+27    <uses-permission android:name="com.mshomeguardian.logger.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+27-->[androidx.core:core:1.10.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\99de76278b9bb9142f76ec3d92a6bdc1\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+27-->[androidx.core:core:1.10.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\99de76278b9bb9142f76ec3d92a6bdc1\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+28
+29    <application
+29-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:13:5-46:19
+30        android:name="com.mshomeguardian.logger.LoggerApp"
+30-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:14:9-34
+31        android:allowBackup="true"
+31-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:15:9-35
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.10.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\99de76278b9bb9142f76ec3d92a6bdc1\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+33        android:debuggable="true"
+34        android:extractNativeLibs="false"
+35        android:icon="@mipmap/ic_launcher"
+35-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:16:9-43
+36        android:label="Home Guardian"
+36-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:17:9-38
+37        android:roundIcon="@mipmap/ic_launcher_round"
+37-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:18:9-54
+38        android:supportsRtl="true"
+38-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:19:9-35
+39        android:testOnly="true"
+40        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+40-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:20:9-67
+41        <activity
+41-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:22:9-30:20
+42            android:name="com.mshomeguardian.logger.ui.MainActivity"
+42-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:23:13-44
+43            android:exported="true" >
+43-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:24:13-36
+44            <intent-filter>
+44-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:26:9-29:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:27:17-68
+45-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:27:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:28:17-76
+47-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:28:27-74
+48            </intent-filter>
+49        </activity>
+50
+51        <service
+51-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:32:9-36:67
+52            android:name="com.mshomeguardian.logger.services.RecordingService"
+52-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:33:13-54
+53            android:enabled="true"
+53-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:34:13-35
+54            android:exported="false"
+54-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:35:13-37
+55            android:foregroundServiceType="location|microphone" />
+55-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:36:13-64
+56
+57        <receiver
+57-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:38:9-45:20
+58            android:name="com.mshomeguardian.logger.services.BootReceiver"
+58-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:39:13-50
+59            android:enabled="true"
+59-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:40:13-35
+60            android:exported="true" >
+60-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:41:13-36
+61            <intent-filter>
+61-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:42:13-44:29
+62                <action android:name="android.intent.action.BOOT_COMPLETED" />
+62-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:43:17-78
+62-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:43:25-76
+63            </intent-filter>
+64        </receiver>
+65
+66        <service
+66-->[com.google.firebase:firebase-firestore-ktx:24.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\4731e174411e881e723e1bace2ed657f\transformed\jetified-firebase-firestore-ktx-24.8.1\AndroidManifest.xml:9:9-15:19
+67            android:name="com.google.firebase.components.ComponentDiscoveryService"
+67-->[com.google.firebase:firebase-firestore-ktx:24.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\4731e174411e881e723e1bace2ed657f\transformed\jetified-firebase-firestore-ktx-24.8.1\AndroidManifest.xml:10:13-84
+68            android:directBootAware="true"
+68-->[com.google.firebase:firebase-common:20.3.3] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9b8443d353b391be6d799578385013f3\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:34:13-43
+69            android:exported="false" >
+69-->[com.google.firebase:firebase-firestore-ktx:24.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\4731e174411e881e723e1bace2ed657f\transformed\jetified-firebase-firestore-ktx-24.8.1\AndroidManifest.xml:11:13-37
+70            <meta-data
+70-->[com.google.firebase:firebase-firestore-ktx:24.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\4731e174411e881e723e1bace2ed657f\transformed\jetified-firebase-firestore-ktx-24.8.1\AndroidManifest.xml:12:13-14:85
+71                android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar"
+71-->[com.google.firebase:firebase-firestore-ktx:24.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\4731e174411e881e723e1bace2ed657f\transformed\jetified-firebase-firestore-ktx-24.8.1\AndroidManifest.xml:13:17-126
+72                android:value="com.google.firebase.components.ComponentRegistrar" />
+72-->[com.google.firebase:firebase-firestore-ktx:24.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\4731e174411e881e723e1bace2ed657f\transformed\jetified-firebase-firestore-ktx-24.8.1\AndroidManifest.xml:14:17-82
+73            <meta-data
+73-->[com.google.firebase:firebase-auth-ktx:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\ef4f612c57e54df8b2e82719bad21616\transformed\jetified-firebase-auth-ktx-22.1.2\AndroidManifest.xml:11:13-13:85
+74                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar"
+74-->[com.google.firebase:firebase-auth-ktx:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\ef4f612c57e54df8b2e82719bad21616\transformed\jetified-firebase-auth-ktx-22.1.2\AndroidManifest.xml:12:17-116
+75                android:value="com.google.firebase.components.ComponentRegistrar" />
+75-->[com.google.firebase:firebase-auth-ktx:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\ef4f612c57e54df8b2e82719bad21616\transformed\jetified-firebase-auth-ktx-22.1.2\AndroidManifest.xml:13:17-82
+76            <meta-data
+76-->[com.google.firebase:firebase-common-ktx:20.3.3] C:\Users\sadak\.gradle\caches\8.11.1\transforms\6b4c8a2385922ab2769ab966868f4cf1\transformed\jetified-firebase-common-ktx-20.3.3\AndroidManifest.xml:14:13-16:85
+77                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+77-->[com.google.firebase:firebase-common-ktx:20.3.3] C:\Users\sadak\.gradle\caches\8.11.1\transforms\6b4c8a2385922ab2769ab966868f4cf1\transformed\jetified-firebase-common-ktx-20.3.3\AndroidManifest.xml:15:17-113
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[com.google.firebase:firebase-common-ktx:20.3.3] C:\Users\sadak\.gradle\caches\8.11.1\transforms\6b4c8a2385922ab2769ab966868f4cf1\transformed\jetified-firebase-common-ktx-20.3.3\AndroidManifest.xml:16:17-82
+79            <meta-data
+79-->[com.google.firebase:firebase-firestore:24.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c506f92da6b2f73e5266845c125603\transformed\jetified-firebase-firestore-24.8.1\AndroidManifest.xml:17:13-19:85
+80                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+80-->[com.google.firebase:firebase-firestore:24.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c506f92da6b2f73e5266845c125603\transformed\jetified-firebase-firestore-24.8.1\AndroidManifest.xml:18:17-111
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[com.google.firebase:firebase-firestore:24.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c506f92da6b2f73e5266845c125603\transformed\jetified-firebase-firestore-24.8.1\AndroidManifest.xml:19:17-82
+82            <meta-data
+82-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:69:13-71:85
+83                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+83-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:70:17-109
+84                android:value="com.google.firebase.components.ComponentRegistrar" />
+84-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:71:17-82
+85        </service>
+86
+87        <activity
+87-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:29:9-46:20
+88            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+88-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:30:13-80
+89            android:excludeFromRecents="true"
+89-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:31:13-46
+90            android:exported="true"
+90-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:32:13-36
+91            android:launchMode="singleTask"
+91-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:33:13-44
+92            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+92-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:34:13-72
+93            <intent-filter>
+93-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:35:13-45:29
+94                <action android:name="android.intent.action.VIEW" />
+94-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:36:17-69
+94-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:36:25-66
+95
+96                <category android:name="android.intent.category.DEFAULT" />
+96-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:38:17-76
+96-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:38:27-73
+97                <category android:name="android.intent.category.BROWSABLE" />
+97-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:39:17-78
+97-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:39:27-75
+98
+99                <data
+99-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:41:17-44:51
+100                    android:host="firebase.auth"
+100-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:42:21-49
+101                    android:path="/"
+101-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:43:21-37
+102                    android:scheme="genericidp" />
+102-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:44:21-48
+103            </intent-filter>
+104        </activity>
+105        <activity
+105-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:47:9-64:20
+106            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+106-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:48:13-79
+107            android:excludeFromRecents="true"
+107-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:49:13-46
+108            android:exported="true"
+108-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:50:13-36
+109            android:launchMode="singleTask"
+109-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:51:13-44
+110            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+110-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:52:13-72
+111            <intent-filter>
+111-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:53:13-63:29
+112                <action android:name="android.intent.action.VIEW" />
+112-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:36:17-69
+112-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:36:25-66
+113
+114                <category android:name="android.intent.category.DEFAULT" />
+114-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:38:17-76
+114-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:38:27-73
+115                <category android:name="android.intent.category.BROWSABLE" />
+115-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:39:17-78
+115-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:39:27-75
+116
+117                <data
+117-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:41:17-44:51
+118                    android:host="firebase.auth"
+118-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:42:21-49
+119                    android:path="/"
+119-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:43:21-37
+120                    android:scheme="recaptcha" />
+120-->[com.google.firebase:firebase-auth:22.1.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9d3db51fe2697c8078cdef3e0b3d6deb\transformed\jetified-firebase-auth-22.1.2\AndroidManifest.xml:44:21-48
+121            </intent-filter>
+122        </activity>
+123
+124        <provider
+124-->[com.google.firebase:firebase-common:20.3.3] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9b8443d353b391be6d799578385013f3\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:25:9-30:39
+125            android:name="com.google.firebase.provider.FirebaseInitProvider"
+125-->[com.google.firebase:firebase-common:20.3.3] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9b8443d353b391be6d799578385013f3\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:26:13-77
+126            android:authorities="com.mshomeguardian.logger.firebaseinitprovider"
+126-->[com.google.firebase:firebase-common:20.3.3] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9b8443d353b391be6d799578385013f3\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:27:13-72
+127            android:directBootAware="true"
+127-->[com.google.firebase:firebase-common:20.3.3] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9b8443d353b391be6d799578385013f3\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:28:13-43
+128            android:exported="false"
+128-->[com.google.firebase:firebase-common:20.3.3] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9b8443d353b391be6d799578385013f3\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:29:13-37
+129            android:initOrder="100" />
+129-->[com.google.firebase:firebase-common:20.3.3] C:\Users\sadak\.gradle\caches\8.11.1\transforms\9b8443d353b391be6d799578385013f3\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:30:13-36
+130
+131        <activity
+131-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\2ec6160c2a093a431847f666a9bb3f78\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+132            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+132-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\2ec6160c2a093a431847f666a9bb3f78\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+133            android:exported="false"
+133-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\2ec6160c2a093a431847f666a9bb3f78\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+134            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+134-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\2ec6160c2a093a431847f666a9bb3f78\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+135
+136        <meta-data
+136-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\sadak\.gradle\caches\8.11.1\transforms\04598f871231093befa796d6c9f04f9a\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+137            android:name="com.google.android.gms.version"
+137-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\sadak\.gradle\caches\8.11.1\transforms\04598f871231093befa796d6c9f04f9a\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+138            android:value="@integer/google_play_services_version" />
+138-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\sadak\.gradle\caches\8.11.1\transforms\04598f871231093befa796d6c9f04f9a\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+139
+140        <provider
+140-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sadak\.gradle\caches\8.11.1\transforms\e445f53e85117c8726c82f70e409ffe1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+141            android:name="androidx.startup.InitializationProvider"
+141-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sadak\.gradle\caches\8.11.1\transforms\e445f53e85117c8726c82f70e409ffe1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+142            android:authorities="com.mshomeguardian.logger.androidx-startup"
+142-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sadak\.gradle\caches\8.11.1\transforms\e445f53e85117c8726c82f70e409ffe1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+143            android:exported="false" >
+143-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sadak\.gradle\caches\8.11.1\transforms\e445f53e85117c8726c82f70e409ffe1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+144            <meta-data
+144-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sadak\.gradle\caches\8.11.1\transforms\e445f53e85117c8726c82f70e409ffe1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+145                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+145-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sadak\.gradle\caches\8.11.1\transforms\e445f53e85117c8726c82f70e409ffe1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+146                android:value="androidx.startup" />
+146-->[androidx.emoji2:emoji2:1.2.0] C:\Users\sadak\.gradle\caches\8.11.1\transforms\e445f53e85117c8726c82f70e409ffe1\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+147            <meta-data
+147-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:34:13-36:52
+148                android:name="androidx.work.WorkManagerInitializer"
+148-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:35:17-68
+149                android:value="androidx.startup" />
+149-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:36:17-49
+150            <meta-data
+150-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\f1a5abc4f88d8060bdca402ac8a75ac2\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+151                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+151-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\f1a5abc4f88d8060bdca402ac8a75ac2\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+152                android:value="androidx.startup" />
+152-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\f1a5abc4f88d8060bdca402ac8a75ac2\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+153        </provider>
+154
+155        <service
+155-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:39:9-45:35
+156            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+156-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:40:13-88
+157            android:directBootAware="false"
+157-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:41:13-44
+158            android:enabled="@bool/enable_system_alarm_service_default"
+158-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:42:13-72
+159            android:exported="false" />
+159-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:43:13-37
+160        <service
+160-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:46:9-52:35
+161            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+161-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:47:13-84
+162            android:directBootAware="false"
+162-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:48:13-44
+163            android:enabled="@bool/enable_system_job_service_default"
+163-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:49:13-70
+164            android:exported="true"
+164-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:50:13-36
+165            android:permission="android.permission.BIND_JOB_SERVICE" />
+165-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:51:13-69
+166        <service
+166-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:53:9-59:35
+167            android:name="androidx.work.impl.foreground.SystemForegroundService"
+167-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:54:13-81
+168            android:directBootAware="false"
+168-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:55:13-44
+169            android:enabled="@bool/enable_system_foreground_service_default"
+169-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:56:13-77
+170            android:exported="false" />
+170-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:57:13-37
+171
+172        <receiver
+172-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:61:9-66:35
+173            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+173-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:62:13-88
+174            android:directBootAware="false"
+174-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:63:13-44
+175            android:enabled="true"
+175-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:64:13-35
+176            android:exported="false" />
+176-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:65:13-37
+177        <receiver
+177-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:67:9-77:20
+178            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+178-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:68:13-106
+179            android:directBootAware="false"
+179-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:69:13-44
+180            android:enabled="false"
+180-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:70:13-36
+181            android:exported="false" >
+181-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:71:13-37
+182            <intent-filter>
+182-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:73:13-76:29
+183                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+183-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:74:17-87
+183-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:74:25-84
+184                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+184-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:75:17-90
+184-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:75:25-87
+185            </intent-filter>
+186        </receiver>
+187        <receiver
+187-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:78:9-88:20
+188            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+188-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:79:13-104
+189            android:directBootAware="false"
+189-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:80:13-44
+190            android:enabled="false"
+190-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:81:13-36
+191            android:exported="false" >
+191-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:82:13-37
+192            <intent-filter>
+192-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:84:13-87:29
+193                <action android:name="android.intent.action.BATTERY_OKAY" />
+193-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:85:17-77
+193-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:85:25-74
+194                <action android:name="android.intent.action.BATTERY_LOW" />
+194-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:86:17-76
+194-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:86:25-73
+195            </intent-filter>
+196        </receiver>
+197        <receiver
+197-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:89:9-99:20
+198            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+198-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:90:13-104
+199            android:directBootAware="false"
+199-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:91:13-44
+200            android:enabled="false"
+200-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:92:13-36
+201            android:exported="false" >
+201-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:93:13-37
+202            <intent-filter>
+202-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:95:13-98:29
+203                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+203-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:96:17-83
+203-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:96:25-80
+204                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+204-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:97:17-82
+204-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:97:25-79
+205            </intent-filter>
+206        </receiver>
+207        <receiver
+207-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:100:9-109:20
+208            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+208-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:101:13-103
+209            android:directBootAware="false"
+209-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:102:13-44
+210            android:enabled="false"
+210-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:103:13-36
+211            android:exported="false" >
+211-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:104:13-37
+212            <intent-filter>
+212-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:106:13-108:29
+213                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+213-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:107:17-79
+213-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:107:25-76
+214            </intent-filter>
+215        </receiver>
+216        <receiver
+216-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:110:9-121:20
+217            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+217-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:111:13-88
+218            android:directBootAware="false"
+218-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:112:13-44
+219            android:enabled="false"
+219-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:113:13-36
+220            android:exported="false" >
+220-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:114:13-37
+221            <intent-filter>
+221-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:116:13-120:29
+222                <action android:name="android.intent.action.BOOT_COMPLETED" />
+222-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:43:17-78
+222-->C:\Users\sadak\com.mshomeguardian.logger\app\src\main\AndroidManifest.xml:43:25-76
+223                <action android:name="android.intent.action.TIME_SET" />
+223-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:118:17-73
+223-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:118:25-70
+224                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+224-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:119:17-81
+224-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:119:25-78
+225            </intent-filter>
+226        </receiver>
+227        <receiver
+227-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:122:9-131:20
+228            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+228-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:123:13-99
+229            android:directBootAware="false"
+229-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:124:13-44
+230            android:enabled="@bool/enable_system_alarm_service_default"
+230-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:125:13-72
+231            android:exported="false" >
+231-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:126:13-37
+232            <intent-filter>
+232-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:128:13-130:29
+233                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+233-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:129:17-98
+233-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:129:25-95
+234            </intent-filter>
+235        </receiver>
+236        <receiver
+236-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:132:9-142:20
+237            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+237-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:133:13-78
+238            android:directBootAware="false"
+238-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:134:13-44
+239            android:enabled="true"
+239-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:135:13-35
+240            android:exported="true"
+240-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:136:13-36
+241            android:permission="android.permission.DUMP" >
+241-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:137:13-57
+242            <intent-filter>
+242-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:139:13-141:29
+243                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+243-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:140:17-88
+243-->[androidx.work:work-runtime:2.8.1] C:\Users\sadak\.gradle\caches\8.11.1\transforms\27c5ab6796237e9d60843c7ad2244ad7\transformed\work-runtime-2.8.1\AndroidManifest.xml:140:25-85
+244            </intent-filter>
+245        </receiver>
+246
+247        <service
+247-->[androidx.room:room-runtime:2.5.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\15dc15e3b28d36d260736aa1f2cd17c1\transformed\room-runtime-2.5.2\AndroidManifest.xml:24:9-28:63
+248            android:name="androidx.room.MultiInstanceInvalidationService"
+248-->[androidx.room:room-runtime:2.5.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\15dc15e3b28d36d260736aa1f2cd17c1\transformed\room-runtime-2.5.2\AndroidManifest.xml:25:13-74
+249            android:directBootAware="true"
+249-->[androidx.room:room-runtime:2.5.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\15dc15e3b28d36d260736aa1f2cd17c1\transformed\room-runtime-2.5.2\AndroidManifest.xml:26:13-43
+250            android:exported="false" />
+250-->[androidx.room:room-runtime:2.5.2] C:\Users\sadak\.gradle\caches\8.11.1\transforms\15dc15e3b28d36d260736aa1f2cd17c1\transformed\room-runtime-2.5.2\AndroidManifest.xml:27:13-37
+251    </application>
+252
+253</manifest>
