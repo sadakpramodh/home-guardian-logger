@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.mshomeguardian.logger.app-mergeDebugResources-29:/values-v22/values-v22.xml",
+            "outputFile": "com.mshomeguardian.logger.app-mergeDebugResources-40:/values-v22/values-v22.xml",
             "map": [
                 {
                     "source": "C:\\Users\\sadak\\.gradle\\caches\\8.11.1\\transforms\\26eb9498c905c090c60ced016870ee52\\transformed\\appcompat-1.6.1\\res\\values-v22\\values-v22.xml",
